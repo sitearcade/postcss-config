@@ -1,0 +1,69 @@
+{
+  "name": "@sitearcade/postcss-config",
+  "version": "0.1.0",
+  "description": "SiteArcade's postcss config.",
+  "license": "MIT",
+  "homepage": "https://sitearcade.com",
+  "repository": "github:sitearcade/postcss-config",
+  "bugs": "https://github.com/sitearcade/postcss-config/issues",
+  "author": {
+    "name": "Mike Stop Continues",
+    "email": "mike@sitearcade.com",
+    "url": "https://sitearcade.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish --access public",
+    "preversion": "npm test",
+    "test": "echo 'Seems fine...'"
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "3.0.0",
+    "autoprefixer": "10.0.0",
+    "cssnano": "4.1.10",
+    "lost": "8.3.1",
+    "postcss": "8.0.6",
+    "postcss-assets": "5.0.0",
+    "postcss-brand-colors": "3.0.0",
+    "postcss-calc": "7.0.4",
+    "postcss-easing-gradients": "3.0.1",
+    "postcss-easings": "3.0.0",
+    "postcss-functions": "3.0.0",
+    "postcss-import": "12.0.1",
+    "postcss-inject": "1.0.2",
+    "postcss-inset": "1.0.0",
+    "postcss-normalize": "9.0.0",
+    "postcss-preset-env": "6.7.0",
+    "postcss-short": "5.0.0"
+  },
+  "optionalDependencies": {
+    "tailwindcss": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.6",
+    "@sitearcade/eslint-config": "0.2.0",
+    "babel-eslint": "11.0.0-beta.2",
+    "eslint": "7.9.0",
+    "eslint-import-resolver-lerna": "1.1.0",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-better-styled-components": "1.1.2",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-fp": "2.3.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jest": "24.0.2",
+    "eslint-plugin-jest-formatting": "2.0.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-lodash": "7.1.0",
+    "eslint-plugin-optimize-regex": "1.2.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-ramda": "2.5.1",
+    "eslint-plugin-react": "7.20.6",
+    "eslint-plugin-react-hooks": "4.1.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@sitearcade/eslint-config"
+    ]
+  }
+}
