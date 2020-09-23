@@ -1,19 +1,7 @@
-// vars
-
-const isProd = process.env.NODE_ENV === 'production';
-
-const classRx = /[\w-/.:]+(?<!:)/g;
-
-// fns
-
-const compact = (arr) => arr.filter(Boolean);
-
 // export
 
 module.exports = {
-  plugins: compact([
-    'tailwindcss',
-
+  plugins: [
     [
       'postcss-preset-env', {
         stage: 2,
@@ -28,11 +16,6 @@ module.exports = {
       },
     ],
 
-    isProd && [
-      '@fullhuman/postcss-purgecss', {
-        content: ['./**/*.js', './node_modules/@arc/**/*.js'],
-        defaultExtractor: (content) => content.match(classRx) || [],
-      },
-    ],
-  ]),
+    'tailwindcss',
+  ],
 };
