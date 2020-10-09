@@ -61,7 +61,6 @@ module.exports = {
           ],
           'rebeccapurple-color': [require('postcss-brand-colors')()],
           'system-ui-font-family': [
-            require('lost')(),
             require('postcss-calc')({
               preserve: true,
               mediaQueries: true,
