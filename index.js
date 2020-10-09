@@ -56,7 +56,8 @@ module.exports = {
           'all-property': [
             require('postcss-short')(),
             require('postcss-inset')(),
-            require('postcss-easings')(),
+            // FIXME: https://github.com/postcss/postcss-easings/issues/12
+            // require('postcss-easings')(),
             require('postcss-easing-gradients')(),
           ],
           'rebeccapurple-color': [require('postcss-brand-colors')()],
