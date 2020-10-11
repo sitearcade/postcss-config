@@ -72,6 +72,8 @@ module.exports = {
       },
     ],
 
+    'postcss-easings',
+
     isProd && [
       '@fullhuman/postcss-purgecss', {
         content: ['./**/*.js', './node_modules/@arc/**/*.js'],
