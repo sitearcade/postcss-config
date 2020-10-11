@@ -56,8 +56,8 @@ module.exports = {
           'all-property': [
             require('postcss-short')(),
             require('postcss-inset')(),
-            // FIXME: https://github.com/postcss/postcss-easings/issues/12
-            // require('postcss-easings')(),
+            // FIXME: https://github.com/vercel/next.js/issues/17242
+            require('postcss-easings')(),
             require('postcss-easing-gradients')(),
           ],
           'rebeccapurple-color': [require('postcss-brand-colors')()],
@@ -71,8 +71,6 @@ module.exports = {
         },
       },
     ],
-
-    'postcss-easings',
 
     isProd && [
       '@fullhuman/postcss-purgecss', {
