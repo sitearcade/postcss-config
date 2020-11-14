@@ -1,6 +1,6 @@
 {
   "name": "@sitearcade/postcss-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "SiteArcade's postcss config.",
   "license": "MIT",
   "homepage": "https://www.sitearcade.com",
