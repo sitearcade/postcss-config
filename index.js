@@ -23,7 +23,6 @@ module.exports = {
       'postcss-assets', {
         loadPaths: [
           path.resolve(process.cwd(), './public'),
-          path.resolve(process.cwd(), './static'),
           process.cwd(),
         ],
       },
@@ -31,7 +30,7 @@ module.exports = {
 
     [
       'postcss-preset-env', {
-        stage: 2,
+        stage: 1,
         preserve: false,
 
         features: {
@@ -55,18 +54,8 @@ module.exports = {
         insertAfter: {
           'all-property': [
             require('postcss-short')(),
-            require('postcss-inset')(),
-            // FIXME: https://github.com/vercel/next.js/issues/17242
             require('postcss-easings')(),
             require('postcss-easing-gradients')(),
-          ],
-          'rebeccapurple-color': [require('postcss-brand-colors')()],
-          'system-ui-font-family': [
-            require('postcss-calc')({
-              preserve: true,
-              mediaQueries: true,
-              selectors: true,
-            }),
           ],
         },
       },
