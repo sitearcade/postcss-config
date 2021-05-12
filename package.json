@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "@sitearcade/eslint-config": "0.3.0",
-    "postcss": "8.2.4"
+    "postcss": "8.2.10"
   },
   "eslintConfig": {
     "extends": [
