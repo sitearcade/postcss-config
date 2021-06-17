@@ -19,24 +19,24 @@
     "test": "echo 'Seems fine...'"
   },
   "dependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.0",
-    "autoprefixer": "^10.2.4",
-    "cssnano": "^4.1.10",
-    "postcss-assets": "^5.0.0",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.6",
+    "postcss-assets": "^6.0.0",
     "postcss-easing-gradients": "^3.0.1",
     "postcss-easings": "^3.0.1",
     "postcss-functions": "^4.0.2",
-    "postcss-import": "^14.0.0",
-    "postcss-normalize": "^9.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-normalize": "^10.0.0",
     "postcss-preset-env": "^6.7.0",
     "postcss-short": "^5.0.0"
   },
   "peerDependencies": {
-    "postcss": "^8.2.4"
+    "postcss": "^8.3.5"
   },
   "devDependencies": {
-    "@sitearcade/eslint-config": "0.3.0",
-    "postcss": "8.2.4"
+    "@sitearcade/eslint-config": "1.7.0",
+    "postcss": "8.3.5"
   },
   "eslintConfig": {
     "extends": [
